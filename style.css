@@ -1,11 +1,17 @@
 html {
-  height: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
 body {
-  min-height: 100%;
   margin: 0;
-  padding: 0;
 }
 
 header {
@@ -27,8 +33,12 @@ header .minititle {
 }
 
 nav {
+  text-align: center;
   margin-top: 75px;
-  margin-left: 500px;
+}
+
+ul {
+  padding-left: 0;
 }
 
 nav li {
@@ -37,7 +47,6 @@ nav li {
 }
 
 main {
-  margin-left: 400px;
   margin-top: 70px;
 }
 
@@ -46,19 +55,35 @@ footer {
   background: rgb(39, 56, 92);
   padding: 15px;
   border: solid 3px black;
+  text-align: center;
 }
 
 footer a {
   color: white;
 }
 
-footer p {
+footer li {
   display: inline-block;
-  margin-left: 410px;
   color: white;
 }
 
+.departure {
+  float: left;
+  margin-left: 1em;
+}
+
+.arrival {
+  margin: 0 auto;
+}
+
+.now {
+  float: right;
+  margin-right: 1em;
+}
+
+
 div#slider {
+  margin: 0 auto;
   width: 80%;
   max-width: 1000px;
   overflow: hidden;
