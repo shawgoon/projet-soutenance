@@ -14,15 +14,53 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+/* les formulaires */
+input {
+  margin: 1em 0;
+  width: 100%;
+}
+
+.hide {
+  position: relative;
+  opacity: 1;
+  margin: 10em auto;
+  padding: 2em;
+  background: rgb(232, 232, 232);
+  border: 0.1em solid rgb(207, 207, 207);
+  border-radius: 3em;
+  width: 30em;
+  height: 40em;
+}
+
+/* TRANSITION */
+.minititle a:hover {
+  color: rgb(181, 202, 246);
+}
+
+/* TRANSITION overlay */
+#wrap {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba(9, 9, 9, 0.8);
+}
+
 header {
   background: rgb(39, 56, 92);
-  padding: 20px;
-  color: white;
-  border: solid 3px black;
+  padding: 2em;
+  border: solid 0.3em black;
 }
 
 header .title {
   font-size: 30px;
+  color: white;
   display: inline-block;
 }
 
@@ -30,6 +68,7 @@ header .minititle {
   margin-left: 80%;
   font-size: 25px;
   display: inline-block;
+  color: white;
 }
 
 nav {
@@ -81,17 +120,16 @@ footer li {
   margin-right: 1em;
 }
 
-
 div#slider {
   margin: 0 auto;
   width: 80%;
-  max-width: 1000px;
+  max-width: 100em;
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 1.5em;
 }
 
 div#slider figure {
-  position: relative;
+  /*position: relative;*/
   width: 500%;
   margin: 0;
   padding: 0;
@@ -119,6 +157,7 @@ li {
   list-style: none;
   font-size: 25px;
 }
+
 @keyframes slidy {
   0% {
     left: 0;
@@ -156,3 +195,164 @@ li {
     left: -400%;
   }
 }
+
+/* carousel background */
+/*.cb-slideshow,
+.cb-slideshow:after {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 9.8em;
+  left: 0;
+  z-index: 1;
+}*/
+
+/*.cb-slideshow:after {
+  content: '';
+  background: transparent url(images/images.jpg) repeat top left;
+}*/
+
+/*.cb-slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li .legend {
+  z-index: 1000;
+  position: absolute;
+  bottom: 3em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  animation: titleAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li .legend h3 {
+  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24em;
+  padding: 0;
+  line-height: 20em;
+}
+
+.cb-slideshow li:nth-child(1) span {
+  background-image: url(https://placekitten.com/g/500/300);
+}
+
+.cb-slideshow li:nth-child(2) span {
+  background-image: url(http://placebacon.net/500/300);
+  animation-delay: 6s;
+}
+
+.cb-slideshow li:nth-child(3) span {
+  background-image: url(http://placebacon.net/500/300);
+  animation-delay: 12s;
+}
+
+.cb-slideshow li:nth-child(4) span {
+  background-image: url(http://lorempixel.com/400/200);
+  animation-delay: 18s;
+}
+
+.cb-slideshow li:nth-child(5) span {
+  background-image: url(https://placekitten.com/g/500/300);
+  animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(6) span {
+  background-image: url(https://placekitten.com/g/500/300);
+  animation-delay: 30s;
+}
+
+.cb-slideshow li .legend {
+  animation-delay: 6s;
+}
+
+.cb-slideshow li:nth-child(3) .legend {
+  animation-delay: 12s;
+}
+
+.cb-slideshow li:nth-child(4) .legend {
+  animation-delay: 18s;
+}
+
+.cb-slideshow li:nth-child(5) .legend {
+  animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(6) .legend {
+  animation-delay: 30s;
+}
+
+@keyframes imageAnimation {
+  0% { opacity: 0; animation-timing-function: ease-in; }
+  8% { opacity: 1; animation-timing-function: ease-out; }
+  17% { opacity: 1 }
+  25% { opacity: 0 }
+  100% { opacity: 0 }
+}
+
+@keyframes titleAnimation {
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}*/
+
+/*@keyframes imageAnimation {
+0% {
+   opacity: 0;
+   animation-timing-function: ease-in;
+	}
+
+	8% {
+	    opacity: 1;
+	    transform: scale(1.05);
+	    animation-timing-function: ease-out;
+	}
+
+	17% {
+	    opacity: 1;
+	    transform: scale(1.1) rotate(0);
+	}
+
+	25% {
+	    opacity: 0;
+	    transform: scale(1.1) rotate(0);
+	}
+
+	100% { opacity: 0 }
+}*/
+
+/*@keyframes titleAnimation {
+	0% {
+	    opacity: 0;
+	    transform: translateX(200px);
+	}
+	8% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	17% {
+	    opacity: 1;
+	    transform: translateX(0px);
+	}
+	19% {
+	    opacity: 0;
+	    transform: translateX(-400px);
+	}
+	25% { opacity: 0 }
+	100% { opacity: 0 }
+}*/
