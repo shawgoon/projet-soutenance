@@ -13,7 +13,7 @@ body,
 html {
   margin: 0;
 }
-
+/***************** Header ******************/
 header {
   background: rgb(39, 56, 92);
   padding: 20px;
@@ -45,11 +45,11 @@ nav li {
   display: inline-block;
   margin-left: 30px;
 }
-
+/********************* Main ******************/
 main {
   margin-top: 70px;
 }
-
+/****************** Footer *****************/
 footer {
   margin-top: 40px;
   background: rgb(39, 56, 92);
@@ -80,7 +80,7 @@ footer li {
   float: right;
   margin-right: 1em;
 }
-
+/****************** Carousel ***************/
 div#slider {
   margin: 0 auto;
   width: 80%;
@@ -118,14 +118,6 @@ li {
   list-style: none;
   font-size: 25px;
 }
-
-.connect {
-  margin-left: 35px;
-}
-
-.modal {
-  display: none;
-}
 @keyframes slidy {
   0% {
     left: 0;
@@ -162,4 +154,85 @@ li {
   100% {
     left: -400%;
   }
+}
+/************* Page avis **************/
+.img {
+  margin-left: 210px;
+  margin-top: 40px;
+}
+
+main h1 {
+  margin-left: 835px;
+  color: blue;
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.avis {
+  margin-left: 715px;
+  margin-top: 50px;
+  border: solid 1px rgb(207, 205, 202);
+  border-radius: 5px;
+  width: 500px;
+}
+
+.form,
+.radio {
+  margin-left: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.form input {
+  margin-top: 25px;
+  height: 25px;
+}
+
+hr {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.button {
+  margin-bottom: 15px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 80px;
+}
+
+textarea {
+  margin-top: 35px;
+  width: 400px;
+  height: 100px;
+}
+
+.face,
+.inf {
+  font-size: 20px;
+}
+/****************** Page Villes *********************/
+.villes {
+  margin-left: 670px;
+}
+
+.num {
+  margin-left: 170px;
+  margin-top: 90px;
+  font-size: 20px;
+}
+
+.num p {
+  margin-left: 25px;
+}
+
+h2 {
+  color: white;
+  border: solid 2px rgb(39, 56, 92);
+  border-radius: 3px;
+  background: rgb(39, 56, 92);
+  width: 230px;
 }
