@@ -13,7 +13,29 @@
       </div>
       <div class="minititle">
         <a href="#">Inscription</a>
-        <a href="#">Connexion</a>
+        <!-- Faire apparaitre la fenêtre de login -->
+        <a href="#" onclick="document.getElementById('id01').style.display='block'">Connexion</a>
+      </div>
+
+      <!-- The Modal -->
+      <div id="id01" class="modal">
+        <!-- Fait disparaître fenêtre de login -->
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="">
+
+          <div class="container">
+            <label><br>
+            </label>
+            <input type="text" placeholder="Nom" name="uname" required>
+
+            <label><br>
+            </label>
+            <input type="password" placeholder="Mot de Passe" name="psw" required><br>
+
+            <button class="connect" type="submit">Se Connecter</button>
+          </div>
+        </form>
       </div>
     </header>
     <nav>

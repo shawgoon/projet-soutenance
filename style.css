@@ -4,13 +4,13 @@ html {
 }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
-html,
-body {
+body,
+html {
   margin: 0;
 }
 
@@ -81,7 +81,6 @@ footer li {
   margin-right: 1em;
 }
 
-
 div#slider {
   margin: 0 auto;
   width: 80%;
@@ -118,6 +117,14 @@ a {
 li {
   list-style: none;
   font-size: 25px;
+}
+
+.connect {
+  margin-left: 35px;
+}
+
+.modal {
+  display: none;
 }
 @keyframes slidy {
   0% {
