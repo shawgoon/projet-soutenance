@@ -7,5 +7,6 @@ la table 'users'
 id => INT - auto incrément - primary: yes
 name => VARCHAR (255)
 firstname => VARCHAR (255)
+numberphone => VARCHAR (10)
 email => VARCHAR (255)
 password => VARCHAR (40)

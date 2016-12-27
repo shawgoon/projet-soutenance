@@ -4,13 +4,13 @@ html {
 }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
-html,
-body {
+body,
+html {
   margin: 0;
 }
 
@@ -35,7 +35,7 @@ input {
   border: 0.1em solid rgb(207, 207, 207);
   border-radius: 3em;
   width: 30em;
-  height: 40em;
+  height: auto;
 }
 
 /* TRANSITION */
@@ -52,6 +52,7 @@ input {
   background: rgba(9, 9, 9, 0.8);
 }
 
+/***************** Header ******************/
 header {
   background: rgb(39, 56, 92);
   padding: 2em;
@@ -65,7 +66,7 @@ header .title {
 }
 
 header .minititle {
-  margin-left: 80%;
+  float: right;
   font-size: 25px;
   display: inline-block;
   color: white;
@@ -85,10 +86,17 @@ nav li {
   margin-left: 30px;
 }
 
+/********************* Main ******************/
 main {
   margin-top: 70px;
 }
 
+img {
+  width: 45em;
+  height: 35em;
+}
+
+/****************** Footer *****************/
 footer {
   margin-top: 40px;
   background: rgb(39, 56, 92);
@@ -120,6 +128,7 @@ footer li {
   margin-right: 1em;
 }
 
+/****************** Carousel ***************/
 div#slider {
   margin: 0 auto;
   width: 80%;
@@ -129,7 +138,7 @@ div#slider {
 }
 
 div#slider figure {
-  /*position: relative;*/
+  position: relative;
   width: 500%;
   margin: 0;
   padding: 0;
@@ -145,7 +154,6 @@ div#slider figure img {
 }
 
 .minititle a {
-  text-decoration: none;
   color: white;
 }
 

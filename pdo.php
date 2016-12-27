@@ -1,3 +1,4 @@
+
 <?php
 // insérez vos coordonées d'herbegement
 $user = "root";
