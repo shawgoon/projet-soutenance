@@ -6,7 +6,7 @@
     <div class="inf">
       <h2>Taxi Dieppe</h2>
       <p>15 rue machin</p>
-      <p>72 200 - Dieppe</p>
+      <p>76 200 - Dieppe</p>
       <p>Service commercial : <br>
         Tel : 02 16 85 79 10 <br>
         Fax : 02 16 85 79 15
