@@ -6,7 +6,7 @@ if (isset($_POST['numberphone']) && isset($_POST['password'])) {
 
   $sql = "SELECT *
   FROM user
-  WHERE email = '".$_POST['numberphone']."'AND password = '".$_POST['password']."'";
+  WHERE numberphone = '".$_POST['numberphone']."'AND password = '".$_POST['password']."'";
   $user = $instance->query($sql)->fetch();
 
   if ($user) {
@@ -15,10 +15,7 @@ if (isset($_POST['numberphone']) && isset($_POST['password'])) {
       "userId" => $user['id']
     );
     $connected = true;
-    $message = "Connecté !";
-  } else {
-    $message = "identifiants incorrect !";
-  }
+    
 }?>
 
   <?php if ($connected) { ?>
