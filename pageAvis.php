@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Votre avis compte</title>
-  </head>
-  <body>
-    <header>
-      <div class="title">
-        Les Taxis
-      </div>
-      <div class="minititle">
-        <a href="#">Inscription</a>
-        <a href="#">Connexion</a>
-      </div>
-    </header>
+<?php include('header.php') ?>
     <nav>
       <ul>
         <li>
@@ -25,7 +8,7 @@
           <a href="#">Professionnels</a>
         </li>
         <li>
-          <a href="villes.html">Nos villes</a>
+          <a href="villes.php">Nos villes</a>
         </li>
         <li>
           <a href="#">Nous recrutons</a>
@@ -66,12 +49,4 @@
         </div>
       </form>
     </main>
-    <footer>
-      <ul>
-        <li class="arrival">
-          <a href="index.html">Retour à l'accueil</a>
-        </li>
-      </ul>
-    </footer>
-  </body>
-</html>
+<?php include('footer.php') ?>
