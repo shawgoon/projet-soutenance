@@ -2,11 +2,11 @@
 
 <?php $connected = false;
 
-if (isset($_POST['email']) && isset($_POST['password'])) {
+if (isset($_POST['numberphone']) && isset($_POST['password'])) {
 
   $sql = "SELECT *
   FROM user
-  WHERE email = '".$_POST['email']."'AND password = '".$_POST['password']."'";
+  WHERE email = '".$_POST['numberphone']."'AND password = '".$_POST['password']."'";
   $user = $instance->query($sql)->fetch();
 
   if ($user) {
@@ -21,9 +21,6 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
   }
 }?>
 
-<div class="">
-<?php if (isset($message)) { ?>
-  <p><?php echo $message ?></p>
   <?php if ($connected) { ?>
     <?php header('Location: http://localhost/projet-soutenance/accueil.php'); //donner votre adresse de la page d'accueil
     exit();?>
