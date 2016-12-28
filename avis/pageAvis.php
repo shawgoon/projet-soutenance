@@ -1,4 +1,5 @@
-<?php include('header.php') ?>
+<?php include ('../header.php'); ?>
+<?php include ('../pdo'); ?>
     <nav>
       <ul>
         <li>
@@ -8,7 +9,7 @@
           <a href="#">Professionnels</a>
         </li>
         <li>
-          <a href="villes.php">Nos villes</a>
+          <a href="villes.html">Nos villes</a>
         </li>
         <li>
           <a href="#">Nous recrutons</a>
@@ -37,7 +38,7 @@
         <hr>
         <div class="form">
           <label class="inf">&#9998;Informations :</label><br>
-          <form class="infos" action="pageAvis.html" method="post">
+          <form class="infos" action="pageAvis.php" method="post">
             <input type="text" name="" value="" placeholder="Nom*"><br>
             <input type="text" name="" value="" placeholder="Prénom*"><br>
             <input type="number" name="" value="" placeholder="Téléphone*"><br>
@@ -49,4 +50,4 @@
         </div>
       </form>
     </main>
-<?php include('footer.php') ?>
+    <?php include ('/footer.php'); ?>
