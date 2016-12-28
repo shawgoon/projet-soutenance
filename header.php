@@ -36,7 +36,6 @@
       <div class="title">
       <a href="accueil.php">Les Taxis</a>
       </div>
-
       <div class="minititle">
         <span class="session">Bonjour, <?php echo $_SESSION['user']['userName'] ?></span><br>
          <a class="logout" href="logout.php">Déconnexion</a>
