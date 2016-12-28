@@ -3,11 +3,17 @@
   $url = $_SERVER['REQUEST_URI'];
 
   switch ($url) {
-    case "/projet-soutenance-master/villes.php":
+    case "/projet-soutenance/villes/villes.php":
         $pageTitle = 'Villes';
         break;
-    case "/projet-soutenance-master/pageAvis.php":
+    case "/projet-soutenance/avis/pageAvis.php":
         $pageTitle = 'Votre avis compte';
+        break;
+    case "/projet-soutenance/accueil.php":
+        $pageTitle = 'accueil';
+        break;
+    case "/projet-soutenance/contact/pageContact.php":
+        $pageTitle = 'nous contacter';
         break;
   }
 
