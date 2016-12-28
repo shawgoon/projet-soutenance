@@ -5,17 +5,16 @@
 if (isset($_POST['numberphone']) && isset($_POST['password'])) {
 
   $sql = "SELECT *
-  FROM user
+  FROM users
   WHERE numberphone = '".$_POST['numberphone']."'AND password = '".$_POST['password']."'";
   $user = $instance->query($sql)->fetch();
 
   if ($user) {
     $_SESSION['user'] = array(
-      "userName" => $user['firstName'],
+      "userName" => $user['firstname'],
       "userId" => $user['id']
     );
     $connected = true;
-    
 }?>
 
   <?php if ($connected) { ?>
@@ -25,7 +24,7 @@ if (isset($_POST['numberphone']) && isset($_POST['password'])) {
 <?php } ?>
 <?php if (!$connected) { ?>
   <?php
-     header('Location: http://localhost/projet-soutenance/login.php'); // renseigner la bonne adresse d'hébergeur( localhost)
+     header('Location: http://localhost/projet-soutenance/index.html'); // renseigner la bonne adresse d'hébergeur( localhost)
     exit();
   ?>
 <?php } ?>

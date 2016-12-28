@@ -1,0 +1,26 @@
+ici nous inscrirons les informations de la basse de données, afin que nous puissions tous avoir les mêmes tables et colonnes.
+
+nom de la base de données : 'projet_soutenance'
+
+la table 'users'
+
+id => INT - auto incrément - primary: yes
+name => VARCHAR (255)
+firstname => VARCHAR (255)
+numberphone => VARCHAR (10)
+email => VARCHAR (255)
+password => VARCHAR (40)
+
+la table 'messages'
+
+id => INT - auto increment - primary: yes
+message => TEXT (1000)
+users_id => VARCHAR (255)
+groupe => VARCHAR (1)
+
+la table 'groupe'
+
+particulier => INT (11)
+professionnel => INT (11)
+administrateur => INT (11)
+master => INT (11)
