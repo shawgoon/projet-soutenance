@@ -1,3 +1,4 @@
+
 $(function(){
 
   var container = $('#wrap');
@@ -13,12 +14,19 @@ $(function(){
   $("#signup").click(function (){
     container.show();
     formSign.show();
+    formLog.hide();
   });
 
   // TRANSITION du formulaire de connexion -----------------------
   $("#login").click(function (){
     container.show();
     formLog.show();
+    formSign.hide();
   });
-
+  container.click(function(){
+    container.hide();
+    formSign.hide();
+    formLog.hide();
+  });
 });
+

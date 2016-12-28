@@ -12,7 +12,8 @@ if (isset($_POST['numberphone']) && isset($_POST['password'])) {
   if ($user) {
     $_SESSION['user'] = array(
       "userName" => $user['firstname'],
-      "userId" => $user['id']
+      "userId" => $user['id'],
+      "groupe" => $user['groupe']
     );
     $connected = true;
 }?>

@@ -1,5 +1,5 @@
+<?php include ('../pdo.php'); ?>
 <?php include ('../header.php'); ?>
-<?php include ('../pdo'); ?>
     <nav>
       <ul>
         <li>
@@ -9,7 +9,7 @@
           <a href="#">Professionnels</a>
         </li>
         <li>
-          <a href="villes.html">Nos villes</a>
+          <a href="../villes/villes.php">Nos villes</a>
         </li>
         <li>
           <a href="#">Nous recrutons</a>
@@ -23,7 +23,7 @@
     </div>
     <main>
       <h1>Votre avis nous intéresse</h1>
-      <form class="avis" action="pageAvis.html" method="post">
+      <form class="avis" action="pageAvis.php" method="post">
         <div class="radio">
           <label class="face">&#9786;Vous êtes :</label>
           <ul>
@@ -50,4 +50,4 @@
         </div>
       </form>
     </main>
-    <?php include ('/footer.php'); ?>
+    <?php include ('../footer.php'); ?>
