@@ -12,7 +12,7 @@
           <a href="villes.php">Nos villes</a>
         </li>
         <li>
-          <a href="#">Nous recrutons</a>
+          <a href="../contact/pageContact.php">Nous recrutons</a>
         </li>
       </ul>
     </nav>
@@ -37,4 +37,4 @@
         </div>
       </div>
     </main>
-    <?php include ('/footer.php'); ?>
+    <?php include ('../footer.php'); ?>
