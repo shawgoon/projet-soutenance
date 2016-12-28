@@ -3,7 +3,7 @@
 $user = "root";
 $mdp = "";
 $host = "localhost";
-$dbName = "chat";
+$dbName = "projet_soutenance";
 
 try
 {

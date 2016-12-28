@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Votre avis compte</title>
-  </head>
-  <body>
-    <header>
-      <div class="title">
-        Les Taxis
-      </div>
-      <div class="minititle">
-        <a href="#">Inscription</a>
-        <a href="#">Connexion</a>
-      </div>
-    </header>
+<?php include ('../pdo'); ?>
+<?php include ('../header.php'); ?>
     <nav>
       <ul>
         <li>
@@ -25,7 +9,7 @@
           <a href="#">Professionnels</a>
         </li>
         <li>
-          <a href="villes.html">Nos villes</a>
+          <a href="../villes/villes.php">Nos villes</a>
         </li>
         <li>
           <a href="#">Nous recrutons</a>
@@ -39,7 +23,7 @@
     </div>
     <main>
       <h1>Votre avis nous intéresse</h1>
-      <form class="avis" action="pageAvis.html" method="post">
+      <form class="avis" action="pageAvis.php" method="post">
         <div class="radio">
           <label class="face">&#9786;Vous êtes :</label>
           <ul>
@@ -54,7 +38,7 @@
         <hr>
         <div class="form">
           <label class="inf">&#9998;Informations :</label><br>
-          <form class="infos" action="pageAvis.html" method="post">
+          <form class="infos" action="pageAvis.php" method="post">
             <input type="text" name="" value="" placeholder="Nom*"><br>
             <input type="text" name="" value="" placeholder="Prénom*"><br>
             <input type="number" name="" value="" placeholder="Téléphone*"><br>
@@ -66,12 +50,4 @@
         </div>
       </form>
     </main>
-    <footer>
-      <ul>
-        <li class="arrival">
-          <a href="index.html">Retour à l'accueil</a>
-        </li>
-      </ul>
-    </footer>
-  </body>
-</html>
+    <?php include ('../footer.php'); ?>
