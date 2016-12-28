@@ -1,14 +1,9 @@
 <?php include('header.php') ?>
-
-<!DOCTYPE html>
-<html>
-<body>
-
 <p>Appuyez sur le bouton pour obtenir votre localisation actuelle</p>
 
 <button onclick="getLocation()">Localisation</button>
 
-<p id="demo"></p>
+<!-- <p id="demo"></p> -->
 
 <script>
 // var x = document.getElementById("demo");
@@ -26,8 +21,5 @@ function showPosition(position) {
     // "<br>Longitude: " + position.coords.longitude;
 }
 </script>
-
-</body>
-</html>
 
 <?php include('footer.php')  ?>
