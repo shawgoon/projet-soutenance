@@ -9,7 +9,7 @@
           <a href="#">Professionnels</a>
         </li>
         <li>
-          <a href="villes.html">Nos villes</a>
+          <a href="villes.php">Nos villes</a>
         </li>
         <li>
           <a href="#">Nous recrutons</a>
