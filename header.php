@@ -1,5 +1,16 @@
 <?php // echo $_SERVER['REQUEST_URI'];
 
+  // Session start
+  session_start();
+
+  function is_log() {
+    if (isset($_SESSION['user'])){
+      $isConnected = true;
+    }
+
+  }
+
+
   $url = $_SERVER['REQUEST_URI'];
 
   switch ($url) {
@@ -33,7 +44,10 @@
         Les Taxis
       </div>
       <div class="minititle">
-        <a href="#">Inscription</a>
-        <a href="#">Connexion</a>
+        <?php if (isset($isConnected)){ ?>
+          <a href="logout.php">Déconnexion</a>
+        <?php }else { ?>
+          <a href="#">Tutu</a>
+        <?php } ?>
       </div>
     </header>
