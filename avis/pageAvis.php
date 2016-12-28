@@ -1,5 +1,5 @@
-<?php include ('../header.php'); ?>
 <?php include ('../pdo'); ?>
+<?php include ('../header.php'); ?>
     <nav>
       <ul>
         <li>
@@ -50,4 +50,4 @@
         </div>
       </form>
     </main>
-    <?php include ('/footer.php'); ?>
+    <?php include ('../footer.php'); ?>

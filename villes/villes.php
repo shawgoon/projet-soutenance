@@ -1,5 +1,5 @@
-<?php include ('../header.php'); ?>
 <?php include ('../pdo.php'); ?>
+<?php include ('../header.php'); ?>
     <nav>
       <ul>
         <li>

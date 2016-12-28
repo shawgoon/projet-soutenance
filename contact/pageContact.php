@@ -1,4 +1,5 @@
 <?php
+include ('../pdo.php');
   include('../header.php');
  ?>
   <body>
@@ -31,5 +32,5 @@
         <p>Les champs suivis d'un <span class="star">*</span> sont obligatoires</p>
     </form>
 <?php
-  include('footer.php');
+  include('../footer.php');
  ?>
