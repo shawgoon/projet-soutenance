@@ -15,7 +15,6 @@ if (isset($_POST['numberphone']) && isset($_POST['password'])) {
       "userId" => $user['id']
     );
     $connected = true;
-
 }?>
 
   <?php if ($connected) { ?>
