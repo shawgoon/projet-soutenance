@@ -1,4 +1,4 @@
-<?php include ('../pdo'); ?>
+<?php include ('../pdo.php'); ?>
 <?php include ('../header.php'); ?>
     <nav>
       <ul>
