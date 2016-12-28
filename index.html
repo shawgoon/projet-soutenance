@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="http://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="master.js"></script>
     <title>Crazy Taxi</title>
   </head>
   <body>
@@ -12,56 +17,75 @@
         Les Taxis
       </div>
       <div class="minititle">
-        <a href="#">Inscription</a>
-        <a href="#">Connexion</a>
+        <a id="signup" href="#">Inscription</a>
+        <a id="login" href="#">Connexion</a>
       </div>
     </header>
+      <div id="wrap">
+      </div>
+      <div id="formSignup" class="hide" >
+        <h2>Inscription</h2>
+        <form class="" action="signup.php" method="post">
+          <label for="">Nom</label><br>
+          <input required="required" type="text" name="userName" value="">
+          <label for="">Prénom</label><br>
+          <input required="required" type="text" name="firstName" value="">
+          <label for="">N° de portable</label><br>
+          <input required="required" step="10" type="text" name="numberphone" value="">
+          <label for="">Email</label><br>
+          <input required="required" type="text" name="email" value="">
+          <label for="">Mot de passe</label>
+          <input required="required" type="password" name="password" value="">
+          <input type="submit" name="createUser" value="Valider">
+        </form>
+      </div>
+      <div id="formLogin" class="hide">
+        <h2>Login</h2>
+        <form class="" action="login.php" method="post">
+          <p><label for="">Votre identifiant</label><br>
+            <input required="required" type="text" name="numberphone" placeholder="Votre numéro de portable"></p>
+            <p><label for="">Votre mot de passe</label><br>
+              <input required="required" type="password" name="password" placeholder="Votre nom de passe"></p>
+            <p><input type="hidden" name="userId" value="">
+            <input type="submit" name="userName" value="connexion"></p>
+          </form>
+        </div>
     <nav>
       <ul>
-        <li>
-          <a href="#">Particuliers</a>
-        </li>
-        <li>
-          <a href="#">Professionnels</a>
-        </li>
-        <li>
-          <a href="villes.php">Nos villes</a>
-        </li>
-        <li>
-          <a href="#">Nous recrutons</a>
-        </li>
-      </ul>
+          <li><a href="#">Particuliers</a></li>
+          <li><a href="#">Professionnels</a></li>
+          <li><a href="villes/villes.php">Nos villes</a></li>
+          <li><a href="#">Nous recrutons</a></li>
+        </ul>
     </nav>
     <main>
       <div id="slider">
         <figure>
-          <img src="https://placekitten.com/g/500/300" alt>
-          <img src="http://placebacon.net/500/300" alt>
-          <img src="https://placecage.com/c/500/300" alt>
-          <img src="https://placekitten.com/g/500/300" alt>
+          <img src="images/chateau.jpg" alt="chateau de Dieppe" >
+            <img src="images/port.jpg" alt="le port de plaisance de Dieppe">
+            <img src="images/pontColbert.jpg" alt="le pont Colbert de Dieppe dit'le pont qui tourne'">
+            <img src="images/plage.jpg" alt="la plage de Dieppe">
           <img src="https://placekitten.com/g/500/300" alt>
         </figure>
       </div>
+    </main>
       <nav class="clients">
         <ul>
-          <li>
-            <a href="pageAvis.php">Les avis de nos clients</a>
-          </li>
+          <li><a href="avis/pageAvis.php">Les avis de nos clients</a></li>
         </ul>
       </nav>
-    </main>
-    <footer>
-      <ul>
-        <li class="departure">
-          <a href="">Départ</a>
-        </li>
-        <li class="arrival">
-          <a href="">Arrivée</a>
-        </li>
-        <li class="now">
-          <a href="">Maintenant</a>
-        </li>
-      </ul>
-    </footer>
+      <footer>
+        <ul>
+          <li class="departure">
+            <a href="">Départ</a>
+          </li>
+          <li class="arrival">
+            <a href="">Arrivée</a>
+          </li>
+          <li class="now">
+            <a href="">Maintenant</a>
+          </li>
+        </ul>
+      </footer>
   </body>
 </html>
