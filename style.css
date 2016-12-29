@@ -1,3 +1,5 @@
+/*index*/
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -14,11 +16,20 @@ html {
   margin: 0;
 }
 
+/****************************généralité*****************************/
 h1,
 h2,
 h3,
 h4 {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
 }
 
 /* les formulaires */
@@ -28,14 +39,16 @@ input {
 }
 
 .hide {
-  position: relative;
+  position: absolute;
   opacity: 1;
-  margin: 10em auto;
+  margin-top: 10em;
+  left: 40%;
+  right: 40%;
   padding: 2em;
   background: rgb(232, 232, 232);
   border: 0.1em solid rgb(207, 207, 207);
   border-radius: 3em;
-  width: 30em;
+  min-width: 30em;
   height: auto;
 }
 
@@ -82,14 +95,12 @@ header {
   font-size: 1.5rem;
 }
 
+/***************************Navigation************************/
 nav {
   text-align: center;
   margin-top: 75px;
 }
 
-ul {
-  padding-left: 0;
-}
 
 nav li {
   display: inline-block;
@@ -97,21 +108,15 @@ nav li {
 }
 
 /********************* Main ******************/
-main {
-  margin-top: 70px;
-}
 
-img {
-  width: 45em;
-  height: 35em;
-}
+
 
 /****************** Footer *****************/
 footer {
-  margin-top: 40px;
+  margin-top: 4em;
   background: rgb(39, 56, 92);
-  padding: 15px;
-  border: solid 3px black;
+  padding: 2em;
+  border: solid 0.3em black;
   text-align: center;
 }
 
@@ -168,13 +173,10 @@ div#slider figure img {
   color: white;
 }
 
-a {
-  text-decoration: none;
-}
 
 li {
   list-style: none;
-  font-size: 25px;
+  font-size: 2.5em;
 }
 
 @keyframes slidy {

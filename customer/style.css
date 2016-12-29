@@ -1,0 +1,108 @@
+/*customer*/
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+/****************************généralité*****************************/
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+/***************** Header ******************/
+header {
+  background: rgb(39, 56, 92);
+  padding: 2em;
+  height: 10em;
+  border: solid 0.3em black;
+}
+
+.title {
+  font-size: 4em;
+  color: white;
+  display: inline-block;
+}
+
+.minititle {
+  float: right;
+  font-size: 2.5em;
+  display: inline-block;
+  color: white;
+}
+
+.session {
+  font-size: 2.5rem;
+}
+
+.logout {
+  font-size: 1.5rem;
+}
+
+.minititle a,
+.title a {
+  color: white;
+}
+
+/* les formulaires */
+input {
+  margin: 1em 0;
+  width: 100%;
+}
+
+textarea {
+  padding: 1em;
+  width: 100%;
+}
+
+.hide {
+  position: relative;
+  opacity: 1;
+  margin : 10em auto;
+  padding: 2em;
+  background: rgb(232, 232, 232);
+  border: 0.1em solid rgb(207, 207, 207);
+  border-radius: 3em;
+  width: 40em;
+  height: auto;
+}
+
+/****************** Footer *****************/
+footer {
+  margin-top: 4em;
+  background: rgb(39, 56, 92);
+  padding: 2em;
+  border: solid 0.3em black;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer li {
+  display: inline-block;
+  color: white;
+}

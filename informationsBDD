@@ -10,17 +10,18 @@ firstname => VARCHAR (255)
 numberphone => VARCHAR (10)
 email => VARCHAR (255)
 password => VARCHAR (40)
+grad => INT (11)
 
 la table 'messages'
 
 id => INT - auto increment - primary: yes
 message => TEXT (1000)
 users_id => VARCHAR (255)
-groupe => VARCHAR (1)
+grad => INT (11)
 
-la table 'groupe'
+la table 'grad'
 
-particulier => INT (11)
-professionnel => INT (11)
-administrateur => INT (11)
+private => INT (11)
+professional => INT (11)
+manager => INT (11)
 master => INT (11)

@@ -13,13 +13,13 @@ if (isset($_POST['numberphone']) && isset($_POST['password'])) {
     $_SESSION['user'] = array(
       "userName" => $user['firstname'],
       "userId" => $user['id'],
-      "groupe" => $user['groupe']
+      "grad" => $user['grad']
     );
     $connected = true;
 }?>
 
   <?php if ($connected) { ?>
-    <?php header('Location: http://localhost/projet-soutenance/accueil.php'); //donner votre adresse de la page d'accueil
+    <?php header('Location: http://localhost/projet-soutenance/customer/accueil.php'); //donner votre adresse de la page d'accueil
     exit();?>
   <?php } ?>
 <?php } ?>

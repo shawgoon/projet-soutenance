@@ -1,7 +1,7 @@
 <footer>
   <ul>
     <li class="arrival">
-      <a href="accueil.php">Retour à l'accueil</a>
+      <a href="accueil.php"></a>
     </li>
   </ul>
 </footer>
