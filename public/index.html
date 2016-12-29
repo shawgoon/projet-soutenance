@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-
     <link rel="stylesheet" href="style.css">
     <script src="master.js"></script>
     <title>Crazy Taxi</title>
@@ -24,7 +21,7 @@
     <div id="wrap"></div>
     <div id="formSignup" class="hide">
       <h2>Inscription</h2>
-      <form class="" action="signup.php" method="post">
+      <form class="" action="../signup.php" method="post">
         <label for="">Nom</label><br>
         <input required="required" type="text" name="userName" value="">
         <label for="">Prénom</label><br>
@@ -40,7 +37,7 @@
     </div>
     <div id="formLogin" class="hide">
       <h2>Connexion</h2>
-      <form class="" action="login.php" method="post">
+      <form class="" action="../login.php" method="post">
         <label for="">Votre identifiant</label><br>
           <input required="required" type="text" name="numberphone" placeholder="Votre numéro de portable">
         <label for="">Votre mot de passe</label><br>
@@ -53,8 +50,8 @@
       <ul>
           <li><a href="#">Particuliers</a></li>
           <li><a href="#">Professionnels</a></li>
-          <li><a href="public/villes.php">Nos villes</a></li>
-          <li><a href="contact/pageContact.php">Nous contacter</a></li>
+          <li><a href="villes.html">Nos villes</a></li>
+          <li><a href="contact.html">Nous contacter</a></li>
         </ul>
     </nav>
     <main>
@@ -63,7 +60,7 @@
     <nav class="clients">
       <ul>
         <li>
-          <a href="public/customerReviews.php">Les avis de nos clients</a>
+          <a href="public/customerReviews.html">Les avis</a>
         </li>
         <li>
           <a href="destination.php">Destination</a>

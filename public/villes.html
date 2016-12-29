@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../normalize.css">
+    <script src="master.js"></script>
+    <title>les villes</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <a href="index.html">Les Taxis</a>
+      </div>
+      <div class="minititle">
+        <a id="signup" href="#">Inscription</a>
+        <a id="login" href="#">Connexion</a>
+      </div>
+    </header>
+    <!-- formulaires -->
+    <section>
+      <div id="wrap"></div>
+      <div id="formSignup" class="hide">
+        <h2>Inscription</h2>
+        <form class="" action="../signup.php" method="post">
+          <label for="">Nom</label><br>
+          <input required="required" type="text" name="userName" value="">
+          <label for="">Prénom</label><br>
+          <input required="required" type="text" name="firstName" value="">
+          <label for="">N° de portable</label><br>
+          <input required="required" step="10" type="text" name="numberphone" value="">
+          <label for="">Email</label><br>
+          <input required="required" type="text" name="email" value="">
+          <label for="">Mot de passe</label>
+          <input required="required" type="password" name="password" value="">
+          <input type="submit" name="createUser" value="Valider">
+        </form>
+      </div>
+    </section>
+    <section>
+      <div id="formLogin" class="hide">
+        <h2>Connexion</h2>
+        <form class="" action="../login.php" method="post">
+          <label for="">Votre identifiant</label><br>
+            <input required="required" type="text" name="numberphone" placeholder="Votre numéro de portable">
+          <label for="">Votre mot de passe</label><br>
+            <input required="required" type="password" name="password" placeholder="Votre nom de passe">
+          <input type="hidden" name="userId" value="">
+            <input type="submit" name="userName" value="connexion">
+        </form>
+      </div>
+    </section>
+    <nav>
+      <ul>
+        <li><a href="part.html">Particuliers</a></li>
+        <li><a href="pro.html">Professionnels</a></li>
+        <li><a href="#">Nos villes</a></li>
+        <li><a href="contact.html">Nous contacter</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Nos villes</h1>
+      <div class="villes">
+        <div class="google">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20550.945368450128!2d1.065979953356547!3d49.920049131953846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0a207670619f9%3A0xaea20a3d78418545!2sDieppe!5e0!3m2!1sfr!2sfr!4v1482494131968"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen></iframe>
+        </div>
+        <div class="num">
+          <h2>
+            &#9742; 02 15 16 87 10
+          </h2>
+          <p>
+            Dieppe et ses alentours
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li class="departure">
+          <a href="">Départ</a>
+        </li>
+        <li class="arrival">
+          <a href="">Arrivée</a>
+        </li>
+        <li class="now">
+          <a href="">Maintenant</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

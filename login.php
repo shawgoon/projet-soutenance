@@ -25,7 +25,7 @@ if (isset($_POST['numberphone']) && isset($_POST['password'])) {
 <?php } ?>
 <?php if (!$connected) { ?>
   <?php
-     header('Location: http://localhost/projet-soutenance/index.html'); // renseigner la bonne adresse d'hébergeur( localhost)
+     header('Location: http://localhost/projet-soutenance/public/index.html'); // renseigner la bonne adresse d'hébergeur( localhost)
     exit();
   ?>
 <?php } ?>

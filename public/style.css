@@ -1,4 +1,4 @@
-/*public*/
+/* public */
 
 html {
   box-sizing: border-box;
@@ -16,11 +16,13 @@ html {
   margin: 0;
 }
 
-/****************************généralité*****************************/
+/********************* généralité ***********************/
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   text-align: center;
 }
 
@@ -30,6 +32,40 @@ a {
 
 ul {
   padding-left: 0;
+}
+
+/* les formulaires */
+input {
+  margin: 1em 0;
+  width: 100%;
+}
+
+.hide {
+  position: absolute;
+  opacity: 1;
+  margin-top: 10em;
+  left: 40%;
+  right: 40%;
+  padding: 2em;
+  background: rgb(232, 232, 232);
+  border: 0.1em solid rgb(207, 207, 207);
+  border-radius: 3em;
+  min-width: 30em;
+  height: auto;
+}
+
+/* TRANSITION */
+.minititle a:hover {
+  color: rgb(181, 202, 246);
+}
+
+/* TRANSITION overlay */
+#wrap {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba(9, 9, 9, 0.8);
 }
 
 /***************** Header ******************/
@@ -66,26 +102,116 @@ header {
   color: white;
 }
 
-
-/****************** Page Villes *********************/
-.villes {
-  margin-left: 670px;
+/********************** Navigation ********************/
+nav {
+  text-align: center;
+  margin-top: 75px;
 }
 
-.num {
-  margin-left: 170px;
-  margin-top: 90px;
-  font-size: 20px;
+nav li {
+  display: inline-block;
+  margin-left: 30px;
 }
 
-.num p {
-  margin-left: 25px;
-}
+/********************* Main ******************/
 
-h2 {
-  color: white;
-  border: solid 2px rgb(39, 56, 92);
-  border-radius: 3px;
+/****************** Footer *****************/
+footer {
+  margin-top: 4em;
   background: rgb(39, 56, 92);
-  width: 230px;
+  padding: 2em;
+  border: solid 0.3em black;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
+
+footer li {
+  display: inline-block;
+  color: white;
+}
+
+.departure {
+  float: left;
+  margin-left: 1em;
+}
+
+.arrival {
+  margin: 0 auto;
+}
+
+.now {
+  float: right;
+  margin-right: 1em;
+}
+
+/****************** Carousel ***************/
+div#slider {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 100em;
+  overflow: hidden;
+  border-radius: 1.5em;
+}
+
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 30s slidy infinite;
+}
+
+div#slider figure img {
+  width: 20%;
+  height: auto;
+  float: left;
+}
+
+
+li {
+  list-style: none;
+  font-size: 2.5em;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0;
+  }
+
+  20% {
+    left: 0;
+  }
+
+  25% {
+    left: -100%;
+  }
+
+  45% {
+    left: -100%;
+  }
+
+  50% {
+    left: -200%;
+  }
+
+  70% {
+    left: -200%;
+  }
+
+  75% {
+    left: -300%;
+  }
+
+  95% {
+    left: -300%;
+  }
+
+  100% {
+    left: -400%;
+  }
 }

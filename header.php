@@ -4,23 +4,17 @@
   $url = $_SERVER['REQUEST_URI'];
 
   switch ($url) {
-    case "/projet-soutenance/villes/villes.php":
-        $pageTitle = 'Villes';
+    case "/projet-soutenance/customer/accueil.php":
+    $pageTitle = 'accueil';
+    break;
+    case "/projet-soutenance/customer/vosavis.php":
+    $pageTitle = 'Votre avis compte';
+    break;
+    case "/projet-soutenance/master/indexAdmin.php":
+        $pageTitle = 'administration';
         break;
-    case "/projet-soutenance/avis/pageAvis.php":
-        $pageTitle = 'Votre avis compte';
-        break;
-    case "/projet-soutenance/accueil.php":
-        $pageTitle = 'accueil';
-        break;
-    case "/projet-soutenance/customer/pageContact.php":
-        $pageTitle = 'nous contacter';
-        break;
-    case "/projet-soutenance/public/villes.php":
-        $pageTitle = 'les villes';
-        break;
-    case "/projet-soutenance/destination.php":
-        $pageTitle = 'destination';
+    case "/projet-soutenance/master/table.php":
+        $pageTitle = 'gestion clients';
         break;
   }
 
@@ -40,7 +34,7 @@
       <a href="accueil.php">Les Taxis</a>
       </div>
       <div class="minititle">
-        <span class="session">Bonjour, <?php echo $_SESSION['user']['userName']; ?></span><br>
+        <span class="session">Bonjour, <?php //echo $_SESSION['user']['userName']; ?></span><br>
          <a class="logout" href="../logout.php">Déconnexion</a>
        </div>
     </header>

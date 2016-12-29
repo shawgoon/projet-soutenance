@@ -17,7 +17,7 @@ function get_current_user_id() {
 
 function is_admin() {
   if (is_log()) {
-    return ($_SESSION['user']['groupe'] === "3, 4");
+    return ($_SESSION['user']['grad'] === "3, 4");
   } else {
     return false;
   }
