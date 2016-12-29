@@ -1,25 +1,19 @@
 <?php include('header.php') ?>
-<p>Appuyez sur le bouton pour obtenir votre localisation actuelle</p>
 
-<button onclick="getLocation()">Localisation</button>
+<!-- Style de la map -->
+<style type="text/css">
+    #map { width:500px; height: 400px; }
+</style>
 
-<!-- <p id="demo"></p> -->
 
-<script>
-// var x = document.getElementById("demo");
+    <p>Appuyez sur le bouton pour obtenir votre localisation actuelle</p>
+    <!-- <form method="POST" name="ajax" action=""> -->
+      <button id="localisation">Localisation</button>
+    <!-- </form> -->
 
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
-
-function showPosition(position) {
-    // x.innerHTML = "Latitude: " + position.coords.latitude +
-    // "<br>Longitude: " + position.coords.longitude;
-}
-</script>
+    <!-- la map google -->
+    <div id="map"></div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2VTy4CLUElPDtIUEFmH3c_Yb_XNNsJ5w&callback=initMap"></script>
 
 <?php include('footer.php')  ?>
