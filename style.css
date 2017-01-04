@@ -14,6 +14,10 @@ html {
   margin: 0;
 }
 
+body {
+  background-image: url('images/1.jpg');
+}
+
 h1,
 h2,
 h3,
@@ -21,6 +25,9 @@ h4 {
   text-align: center;
 }
 
+.back {
+  height: 100vh;
+}
 /* les formulaires */
 input {
   margin: 1em 0;
@@ -38,12 +45,10 @@ input {
   width: 30em;
   height: auto;
 }
-
 /* TRANSITION */
 .minititle a:hover {
   color: rgb(181, 202, 246);
 }
-
 /* TRANSITION overlay */
 #wrap {
   display: flex;
@@ -52,7 +57,6 @@ input {
   width: 100%;
   background: rgba(9, 9, 9, 0.8);
 }
-
 /***************** Header ******************/
 header {
   background: rgb(39, 56, 92);
@@ -71,7 +75,6 @@ header {
   float: right;
   font-size: 2.5em;
   display: inline-block;
-  color: white;
 }
 
 .session {
@@ -84,7 +87,7 @@ header {
 
 nav {
   text-align: center;
-  margin-top: 75px;
+  padding: 75px;
 }
 
 ul {
@@ -95,17 +98,20 @@ nav li {
   display: inline-block;
   margin-left: 30px;
 }
-
 /********************* Main ******************/
-main {
-  margin-top: 70px;
+.main {
+  margin-top: 7em;
 }
 
-img {
-  width: 45em;
-  height: 35em;
+.left {
+  width: 20em;
+  padding: 5em;
+  text-align: center;
 }
 
+.left li {
+  margin-top: 2em;
+}
 /****************** Footer *****************/
 footer {
   margin-top: 40px;
@@ -113,6 +119,10 @@ footer {
   padding: 15px;
   border: solid 3px black;
   text-align: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
 }
 
 footer a {
@@ -122,22 +132,8 @@ footer a {
 footer li {
   display: inline-block;
   color: white;
+  margin-left: 2em;
 }
-
-.departure {
-  float: left;
-  margin-left: 1em;
-}
-
-.arrival {
-  margin: 0 auto;
-}
-
-.now {
-  float: right;
-  margin-right: 1em;
-}
-
 /****************** Carousel ***************/
 div#slider {
   margin: 0 auto;
@@ -145,6 +141,7 @@ div#slider {
   max-width: 100em;
   overflow: hidden;
   border-radius: 1.5em;
+  display: inline-block;
 }
 
 div#slider figure {
@@ -175,42 +172,4 @@ a {
 li {
   list-style: none;
   font-size: 25px;
-}
-
-@keyframes slidy {
-  0% {
-    left: 0;
-  }
-
-  20% {
-    left: 0;
-  }
-
-  25% {
-    left: -100%;
-  }
-
-  45% {
-    left: -100%;
-  }
-
-  50% {
-    left: -200%;
-  }
-
-  70% {
-    left: -200%;
-  }
-
-  75% {
-    left: -300%;
-  }
-
-  95% {
-    left: -300%;
-  }
-
-  100% {
-    left: -400%;
-  }
 }
