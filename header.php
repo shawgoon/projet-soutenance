@@ -17,7 +17,6 @@
         $pageTitle = 'gestion clients';
         break;
   }
-
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +25,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="static/js/gmap_localisation.js"></script>
     <title><?php echo $pageTitle ?></title>
   </head>
   <body>
