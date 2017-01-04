@@ -1,5 +1,6 @@
-<?php // echo $_SERVER['REQUEST_URI'];
+<?php require __dir__.'/startSession.php'; ?>
 
+<?php
   $url = $_SERVER['REQUEST_URI'];
 
   switch ($url) {
@@ -24,16 +25,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="avis/style.css">
+    <link rel="stylesheet" href="contact/style.css">
+    <link rel="stylesheet" href="villes/style.css">
     <link rel="stylesheet" href="style.css">
     <title><?php echo $pageTitle ?></title>
   </head>
   <body>
     <header>
       <div class="title">
-        Les Taxis
+      <a href="accueil.php">Les Taxis</a>
       </div>
       <div class="minititle">
-        <a href="#">Inscription</a>
-        <a href="#">Connexion</a>
-      </div>
+        <span class="session">Bonjour, <?php echo $_SESSION['user']['userName'] ?></span><br>
+         <a class="logout" href="logout.php">Déconnexion</a>
+       </div>
     </header>

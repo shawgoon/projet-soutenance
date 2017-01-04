@@ -20,7 +20,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   text-align: center;
 }
 
@@ -60,19 +61,28 @@ input {
 header {
   background: rgb(39, 56, 92);
   padding: 2em;
+  height: 10em;
   border: solid 0.3em black;
 }
 
-header .title {
-  font-size: 30px;
+.title {
+  font-size: 4em;
   color: white;
   display: inline-block;
 }
 
-header .minititle {
+.minititle {
   float: right;
-  font-size: 25px;
+  font-size: 2.5em;
   display: inline-block;
+}
+
+.session {
+  font-size: 2.5rem;
+}
+
+.logout {
+  font-size: 1.5rem;
 }
 
 nav {
@@ -150,7 +160,8 @@ div#slider figure img {
   float: left;
 }
 
-.minititle a {
+.minititle a,
+.title a {
   color: white;
 }
 
